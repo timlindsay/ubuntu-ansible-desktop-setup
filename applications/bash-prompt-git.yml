@@ -1,0 +1,15 @@
+---
+
+- name: Tweak bash prompt
+  become: false
+  blockinfile:
+    path: ~/.bashrc
+    block: |
+      parse_directory() {
+        DIRNAME=$(pwd)
+        echo $(basename $(dirname $DIRNAME))/$(basename $DIRNAME)
+      }
+      parse_git_branch() {
+        git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
+      }
+      export PS1="\u@\h [\[\e[33m\]\$(parse_directory)\[\e[39m]\]\[\e[32m\]\$(parse_git_branch)\[\e[39m\] $ "

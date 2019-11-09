@@ -15,10 +15,16 @@ else
     echo "Ansible already installed"
 fi
 
+####################################
+# make a local copy of the setup that can be tweaked
+if [ ! -f setup.yml ]; then
+    cp setup.dist.yml setup.yml
+fi
+
 #####################################
 # Display real installation process #
 echo ""
 echo "To install the provided applications run ansible with: "
 echo "  ansible-playbook setup.yml --ask-become-pass"
-echo "Feel free to remove unwanted applications or configurations by removing them from the 'install.yml'"
+echo "Feel free to remove unwanted applications or configurations by removing them from the 'setup.yml'"
 echo ""

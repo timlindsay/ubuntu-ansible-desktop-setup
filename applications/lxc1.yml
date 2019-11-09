@@ -1,0 +1,6 @@
+---
+
+- name: Install lxc1
+  package:
+    name: lxc1
+    state: present

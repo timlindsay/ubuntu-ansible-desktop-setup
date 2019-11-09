@@ -13,6 +13,8 @@
 #
 #  - { name: Java 8, include: applications/java.yml, become: yes }
 #
+#  - { name: Bash Prompt - git, include: applications/bash-prompt-git.yml, become: yes }
+#
 #  - { name: Chrome, include: applications/chrome.yml, become: yes }
 #
 #  - { name: Slack, include: applications/slack.yml, become: yes }
@@ -68,6 +70,22 @@
 #  - { name: pytest, include: applications/pytest.yml, become: yes }
 #
 #  - { name: aws-cli, include: applications/aws-cli.yml, become: yes }
+#
+#  - { name: terminator, include: applications/terminator.yml, become: yes }
+#
+#  - { name: curl, include: applications/curl.yml, become: yes }
+#
+#  - { name: shutter, include: applications/shutter.yml, become: yes }
+#
+#  - { name: nmap, include: applications/nmap.yml, become: yes }
+#
+#  - { name: mysql-workbench, include: applications/mysql-workbench.yml, become: yes }
+#
+#  - { name: dbeaver-ce, include: applications/dbeaver-ce.yml, become: yes }
+#
+#  - { name: dnsmasq, include: applications/dnsmasq.yml, become: yes }
+#
+#  - { name: lxc1, include: applications/lxc1.yml, become: yes }
 #
 #  - { name: Network Manager openvpn for Gnome, include: applications/network-manager-openvpn-gnome.yml, become: yes }
 #

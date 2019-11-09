@@ -1,0 +1,6 @@
+---
+
+- name: Install Shutter
+  package:
+    name: shutter
+    state: present
