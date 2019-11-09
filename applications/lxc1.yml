@@ -4,3 +4,13 @@
   package:
     name: lxc1
     state: present
+    
+- name: Install lxc-templates
+  package:
+    name: lxc-templates
+    state: present
+    
+- name: Install vagrant-lxc
+  package:
+    name: vagrant-lxc
+    state: present    

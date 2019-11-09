@@ -2,5 +2,5 @@
 
 - name: Install dbeaver-ce
   package:
-    name: dbeaver-ce.yml
+    name: dbeaver-ce
     state: present

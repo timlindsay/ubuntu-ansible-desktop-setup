@@ -2,5 +2,5 @@
 
 - name: Install mysql-workbench
   package:
-    name: mysql-workbench.yml
+    name: mysql-workbench
     state: present
