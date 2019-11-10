@@ -76,6 +76,7 @@
 #  - { name: curl, include: applications/curl.yml, become: yes }
 #
 #  - { name: shutter, include: applications/shutter.yml, become: yes }
+#  - { name: flameshot, include: applications/flameshot.yml, become: yes }
 #
 #  - { name: nmap, include: applications/nmap.yml, become: yes }
 #
@@ -87,6 +88,9 @@
 #
 #  - { name: lxc1, include: applications/lxc1.yml, become: yes }
 #
+#  - { name: vagrant, include: applications/vagrant.yml, become: yes }
+#  - { name: ansible, include: applications/ansible.yml, become: yes }
+
 #  - { name: Network Manager openvpn for Gnome, include: applications/network-manager-openvpn-gnome.yml, become: yes }
 #
 
