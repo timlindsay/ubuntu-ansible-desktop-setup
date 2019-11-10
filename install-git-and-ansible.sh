@@ -2,7 +2,7 @@
 
 # Install git
 sudo apt update
-sudo apt install build-essentials git-core
+sudo apt install build-essential git-core
 git clone git@github.com:cosee/ubuntu-ansible-desktop-setup.git
 
 
